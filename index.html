@@ -22,11 +22,9 @@
 <script>
     const script = document.createElement("script");
     const today = new Date();
-    script.src = "https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=1713249104155";
+    script.src = "https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=1713249104166";
     script.defer = true;
     document.body.append(script);
 
-    setTimeout(() => {
-      window.dispatchEvent(new CustomEvent("initEsportsBull"));
-    }, 500);
+    window.dispatchEvent(new CustomEvent("initEsportsBull"));
 </script>
