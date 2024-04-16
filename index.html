@@ -14,25 +14,11 @@
             id="eSportsBullRootDiv"
             data-page="/"
             data-currency="USDT"
-            data-token="9ec7a58c4c47f257982bcc4de631e48d1c96a41d2x02"
             data-language-code="ENG"
             data-parent="esportsbet.io"
         ></div>
     </body>
 </html>
-<script type="text/javascript">
-    window.addEventListener("goto", function (e) {
-        console.log("[Dev] goto EVENT TRIGGER: ", e);
-        const path = e.detail.path;
-        if (path) {
-            document
-                .getElementById("eSportsBullRootDiv")
-                .setAttribute("data-page", path);
-        }
-        window.history.pushState({}, "", path);
-        window.dispatchEvent(new CustomEvent("pageChanged", {}));
-    });
-</script>
 <script>
     const script = document.createElement("script");
     const today = new Date();
@@ -44,5 +30,5 @@
 
     setTimeout(() => {
       window.dispatchEvent(new CustomEvent("initEsportsbull"));
-    }, 2500);
+    }, 500);
 </script>
