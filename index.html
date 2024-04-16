@@ -14,7 +14,7 @@
             id="eSportsBullRootDiv"
             data-page="/"
             data-currency="USDT"
-            data-language-code="ENG"
+            data-language-code="EN-US"
             data-parent="esportsbet.io"
         ></div>
     </body>
@@ -22,13 +22,11 @@
 <script>
     const script = document.createElement("script");
     const today = new Date();
-    script.src =
-        "https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=" +
-        today.getTime();
+    script.src = "https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=1713249104155";
     script.defer = true;
     document.body.append(script);
 
     setTimeout(() => {
-      window.dispatchEvent(new CustomEvent("initEsportsbull"));
+      window.dispatchEvent(new CustomEvent("initEsportsBull"));
     }, 500);
 </script>
