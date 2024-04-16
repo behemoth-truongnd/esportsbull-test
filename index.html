@@ -8,8 +8,9 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover,user-scalable=no"
         />
+        <script src="https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=1713249104188"></script>
     </head>
-    <body>
+    <body onload="dispatchESEvent()">
         <div
             id="eSportsBullRootDiv"
             data-page="/"
@@ -20,11 +21,7 @@
     </body>
 </html>
 <script>
-    const script = document.createElement("script");
-    const today = new Date();
-    script.src = "https://storage.googleapis.com/esportsbull-assets/stg/web/index.js?_=1713249104166";
-    script.defer = true;
-    document.body.append(script);
-
-    window.dispatchEvent(new CustomEvent("initEsportsBull"));
+    function dispatchESEvent() {
+        window.dispatchEvent(new CustomEvent("initEsportsBull"));
+    }
 </script>
